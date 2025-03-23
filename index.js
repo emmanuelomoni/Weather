@@ -1,5 +1,5 @@
-import { OPENWEATHERMAP_TOKEN } from "./apikey.js";
-
+const OPENWEATHERMAP_TOKEN = import.meta.env.VITE_OPENWEATHERMAP_TOKEN;
+console.log("API Key:", OPENWEATHERMAP_TOKEN);
 
 let button = document.getElementById(`search`)
 let cityName = document.getElementById(`city`)
